@@ -32,7 +32,6 @@
       radial-gradient(ellipse at 90% 100%, rgba(122,59,46,0.06) 0%, transparent 60%);
   }
 
-  /* HEADER */
   header {
     background: var(--ink);
     padding: 2rem 2.5rem;
@@ -45,11 +44,7 @@
     border-bottom: 2px solid var(--gold);
   }
 
-  .brand-wordmark {
-    display: flex;
-    flex-direction: column;
-    gap: 2px;
-  }
+  .brand-wordmark { display: flex; flex-direction: column; gap: 2px; }
 
   .brand-name {
     font-family: 'Cormorant Garamond', serif;
@@ -76,18 +71,8 @@
     border: 1px solid var(--gold);
     padding: 0.35rem 0.8rem;
     opacity: 0.9;
-    text-decoration: none;
-    display: inline-block;
-    transition: background 0.2s, color 0.2s;
   }
 
-  .brand-badge:hover {
-    background: var(--gold);
-    color: var(--ink);
-    opacity: 1;
-  }
-
-  /* HERO */
   .hero {
     max-width: 760px;
     margin: 4rem auto 0;
@@ -114,8 +99,7 @@
     gap: 1rem;
   }
 
-  .hero-eyebrow::before,
-  .hero-eyebrow::after {
+  .hero-eyebrow::before, .hero-eyebrow::after {
     content: '';
     display: block;
     height: 1px;
@@ -133,10 +117,7 @@
     margin-bottom: 1.4rem;
   }
 
-  .hero h1 em {
-    font-style: italic;
-    color: var(--rust);
-  }
+  .hero h1 em { font-style: italic; color: var(--rust); }
 
   .hero p {
     font-size: 0.95rem;
@@ -153,7 +134,6 @@
     margin: 2rem auto;
   }
 
-  /* PROGRESS */
   .progress-bar-wrap {
     max-width: 760px;
     margin: 2.5rem auto 0;
@@ -162,11 +142,7 @@
     opacity: 0;
   }
 
-  .progress-labels {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 0.6rem;
-  }
+  .progress-labels { display: flex; justify-content: space-between; margin-bottom: 0.6rem; }
 
   .progress-label {
     font-size: 0.6rem;
@@ -180,12 +156,7 @@
   .progress-label.active { color: var(--gold); }
   .progress-label.done { color: var(--mid); }
 
-  .progress-track {
-    height: 3px;
-    background: var(--border);
-    border-radius: 2px;
-    overflow: hidden;
-  }
+  .progress-track { height: 3px; background: var(--border); border-radius: 2px; overflow: hidden; }
 
   .progress-fill {
     height: 100%;
@@ -195,7 +166,6 @@
     width: 0%;
   }
 
-  /* FORM CARD */
   .form-wrap {
     max-width: 760px;
     margin: 2.5rem auto 4rem;
@@ -216,12 +186,7 @@
 
   .section-card.active { display: block; }
 
-  .section-header {
-    display: flex;
-    align-items: flex-start;
-    gap: 1.2rem;
-    margin-bottom: 2rem;
-  }
+  .section-header { display: flex; align-items: flex-start; gap: 1.2rem; margin-bottom: 2rem; }
 
   .section-num {
     font-family: 'Cormorant Garamond', serif;
@@ -241,16 +206,9 @@
     margin-bottom: 0.3rem;
   }
 
-  .section-meta p {
-    font-size: 0.82rem;
-    color: var(--mid);
-    line-height: 1.6;
-  }
+  .section-meta p { font-size: 0.82rem; color: var(--mid); line-height: 1.6; }
 
-  /* FIELDS */
-  .field-group {
-    margin-bottom: 1.6rem;
-  }
+  .field-group { margin-bottom: 1.6rem; }
 
   label {
     display: block;
@@ -262,10 +220,7 @@
     margin-bottom: 0.5rem;
   }
 
-  label .req {
-    color: var(--gold);
-    margin-left: 3px;
-  }
+  label .req { color: var(--gold); margin-left: 3px; }
 
   label .hint {
     font-size: 0.67rem;
@@ -276,11 +231,7 @@
     margin-left: 6px;
   }
 
-  input[type="text"],
-  input[type="email"],
-  input[type="tel"],
-  select,
-  textarea {
+  input[type="text"], input[type="email"], input[type="tel"], select, textarea {
     width: 100%;
     padding: 0.75rem 1rem;
     border: 1px solid var(--border);
@@ -310,18 +261,9 @@
 
   textarea { resize: vertical; min-height: 100px; line-height: 1.6; }
 
-  .field-row {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1rem;
-  }
+  .field-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
 
-  /* RADIO / CHECKBOX */
-  .radio-group, .check-group {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 0.6rem;
-  }
+  .radio-group, .check-group { display: grid; grid-template-columns: 1fr 1fr; gap: 0.6rem; }
 
   .radio-option, .check-option {
     display: flex;
@@ -342,11 +284,7 @@
     color: var(--ink);
   }
 
-  .radio-option input, .check-option input {
-    width: auto;
-    accent-color: var(--gold);
-    cursor: pointer;
-  }
+  .radio-option input, .check-option input { width: auto; accent-color: var(--gold); cursor: pointer; }
 
   .radio-option.selected, .check-option.selected {
     border-color: var(--gold);
@@ -354,12 +292,7 @@
     color: var(--ink);
   }
 
-  /* SCALE */
-  .scale-wrap {
-    display: flex;
-    flex-direction: column;
-    gap: 0.3rem;
-  }
+  .scale-wrap { display: flex; flex-direction: column; gap: 0.3rem; }
 
   .scale-labels {
     display: flex;
@@ -402,55 +335,54 @@
     margin-top: 0.2rem;
   }
 
-  /* FILE UPLOAD */
-  .upload-zone {
-    border: 2px dashed var(--border);
-    padding: 2.5rem;
-    text-align: center;
-    cursor: pointer;
-    transition: border-color 0.2s, background 0.2s;
-    background: var(--cream);
-    position: relative;
+  /* EMAIL INSTRUCTION BOX (replaces broken file upload) */
+  .email-instruction-box {
+    display: flex;
+    gap: 1.2rem;
+    align-items: flex-start;
+    border: 1px solid var(--border);
+    border-left: 4px solid var(--gold);
+    background: white;
+    padding: 1.4rem 1.6rem;
   }
 
-  .upload-zone:hover, .upload-zone.dragover {
-    border-color: var(--gold);
-    background: var(--gold-pale);
-  }
-
-  .upload-zone input[type="file"] {
-    position: absolute;
-    inset: 0;
-    opacity: 0;
-    cursor: pointer;
-    width: 100%;
-    height: 100%;
-  }
-
-  .upload-icon {
-    font-size: 2rem;
-    margin-bottom: 0.8rem;
-  }
-
-  .upload-zone p {
-    font-size: 0.85rem;
-    color: var(--mid);
-    line-height: 1.6;
-  }
-
-  .upload-zone strong {
+  .email-instruction-icon {
+    font-size: 1.8rem;
     color: var(--gold);
-    font-weight: 500;
+    flex-shrink: 0;
+    line-height: 1;
+    margin-top: 0.1rem;
   }
 
-  .file-name {
-    margin-top: 0.8rem;
-    font-size: 0.8rem;
+  .email-instruction-text p { font-size: 0.85rem; color: var(--mid); line-height: 1.7; margin-bottom: 0.4rem; }
+
+  .email-instruction-address {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.25rem;
+    font-weight: 500;
     color: var(--rust);
-    font-weight: 500;
+    letter-spacing: 0.01em;
+    margin-bottom: 0.6rem !important;
   }
 
-  /* NAVIGATION */
+  .email-instruction-note {
+    font-size: 0.76rem !important;
+    font-style: italic;
+    color: var(--mid);
+    margin-bottom: 0 !important;
+  }
+
+  .email-instruction-note em { color: var(--ink); font-style: italic; }
+
+  .doc-checklist-note {
+    font-size: 0.78rem;
+    color: var(--mid);
+    line-height: 1.7;
+    font-style: italic;
+    margin-top: 0.8rem;
+    margin-bottom: 0;
+  }
+
   .nav-row {
     display: flex;
     justify-content: space-between;
@@ -473,10 +405,7 @@
     outline: none;
   }
 
-  .btn-primary {
-    background: var(--gold);
-    color: var(--ink);
-  }
+  .btn-primary { background: var(--gold); color: var(--ink); }
 
   .btn-primary:hover {
     background: var(--gold-light);
@@ -484,28 +413,13 @@
     transform: translateY(-1px);
   }
 
-  .btn-secondary {
-    background: transparent;
-    color: var(--mid);
-    border: 1px solid var(--border);
-  }
+  .btn-secondary { background: transparent; color: var(--mid); border: 1px solid var(--border); }
 
-  .btn-secondary:hover {
-    border-color: var(--mid);
-    color: var(--ink);
-  }
+  .btn-secondary:hover { border-color: var(--mid); color: var(--ink); }
 
-  .btn:disabled {
-    opacity: 0.35;
-    cursor: not-allowed;
-    transform: none !important;
-  }
+  .btn:disabled { opacity: 0.35; cursor: not-allowed; transform: none !important; }
 
-  .btn-submit {
-    background: var(--ink);
-    color: var(--gold);
-    border: 1px solid var(--gold);
-  }
+  .btn-submit { background: var(--ink); color: var(--gold); border: 1px solid var(--gold); }
 
   .btn-submit:hover {
     background: var(--gold);
@@ -513,11 +427,7 @@
     box-shadow: 0 4px 16px rgba(184,147,58,0.35);
   }
 
-  /* RESULTS / CONFIRMATION PANEL */
-  #results-panel {
-    display: none;
-    animation: fadeUp 0.7s ease both;
-  }
+  #results-panel { display: none; animation: fadeUp 0.7s ease both; }
 
   .result-card {
     background: white;
@@ -552,25 +462,13 @@
   .badge-recommend { background: var(--gold-pale); color: #7a6020; }
   .badge-strength { background: #e8f4e8; color: #2d6a2d; }
 
-  .result-card p, .result-card li {
-    font-size: 0.88rem;
-    line-height: 1.8;
-    color: var(--mid);
-  }
+  .result-card p, .result-card li { font-size: 0.88rem; line-height: 1.8; color: var(--mid); }
 
-  .result-card ul {
-    padding-left: 1.2rem;
-    margin-top: 0.5rem;
-  }
+  .result-card ul { padding-left: 1.2rem; margin-top: 0.5rem; }
 
   .result-card li { margin-bottom: 0.3rem; }
 
-  /* LOADING */
-  .loading-wrap {
-    text-align: center;
-    padding: 3rem;
-    display: none;
-  }
+  .loading-wrap { text-align: center; padding: 3rem; display: none; }
 
   .spinner {
     width: 40px;
@@ -582,9 +480,7 @@
     margin: 0 auto 1rem;
   }
 
-  @keyframes spin {
-    to { transform: rotate(360deg); }
-  }
+  @keyframes spin { to { transform: rotate(360deg); } }
 
   .loading-wrap p {
     font-family: 'Cormorant Garamond', serif;
@@ -593,40 +489,15 @@
     font-style: italic;
   }
 
-  /* FOOTER */
-  footer {
-    background: var(--ink);
-    padding: 2rem 2.5rem;
-    text-align: center;
-    margin-top: 4rem;
-  }
+  footer { background: var(--ink); padding: 2rem 2.5rem; text-align: center; margin-top: 4rem; }
 
-  footer p {
-    font-size: 0.7rem;
-    color: rgba(255,255,255,0.35);
-    letter-spacing: 0.1em;
-    line-height: 1.8;
-  }
+  footer p { font-size: 0.7rem; color: rgba(255,255,255,0.35); letter-spacing: 0.1em; line-height: 1.8; }
 
-  footer strong {
-    color: var(--gold);
-    font-weight: 500;
-  }
+  footer strong { color: var(--gold); font-weight: 500; }
 
-  /* SIGNATURE BLOCK */
-  .sig-block {
-    border: 1px solid var(--border);
-    background: white;
-    padding: 1.5rem;
-    margin-top: 0.5rem;
-  }
+  .sig-block { border: 1px solid var(--border); background: white; padding: 1.5rem; margin-top: 0.5rem; }
 
-  .sig-tabs {
-    display: flex;
-    gap: 0;
-    margin-bottom: 1rem;
-    border-bottom: 1px solid var(--border);
-  }
+  .sig-tabs { display: flex; gap: 0; margin-bottom: 1rem; border-bottom: 1px solid var(--border); }
 
   .sig-tab {
     padding: 0.55rem 1.2rem;
@@ -646,10 +517,7 @@
     font-family: 'DM Sans', sans-serif;
   }
 
-  .sig-tab.active {
-    color: var(--gold);
-    border-bottom-color: var(--gold);
-  }
+  .sig-tab.active { color: var(--gold); border-bottom-color: var(--gold); }
 
   .sig-panel { display: none; }
   .sig-panel.active { display: block; }
@@ -664,12 +532,7 @@
     touch-action: none;
   }
 
-  .sig-canvas-actions {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 0.6rem;
-  }
+  .sig-canvas-actions { display: flex; justify-content: space-between; align-items: center; margin-top: 0.6rem; }
 
   .sig-clear {
     font-size: 0.7rem;
@@ -687,11 +550,7 @@
 
   .sig-clear:hover { border-color: var(--rust); color: var(--rust); }
 
-  .sig-confirm-note {
-    font-size: 0.72rem;
-    color: var(--mid);
-    line-height: 1.6;
-  }
+  .sig-confirm-note { font-size: 0.72rem; color: var(--mid); line-height: 1.6; }
 
   .sig-typed input {
     font-family: 'Cormorant Garamond', serif;
@@ -724,12 +583,7 @@
     color: var(--mid);
   }
 
-  .sig-stamp {
-    font-size: 0.67rem;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    color: var(--gold);
-  }
+  .sig-stamp { font-size: 0.67rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--gold); }
 
   .consent-line {
     display: flex;
@@ -747,191 +601,9 @@
 
   .consent-line input { width: auto; flex-shrink: 0; margin-top: 3px; accent-color: var(--gold); }
 
-  /* PRICING TIER CARDS */
-  .tier-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 0.9rem;
-    margin-top: 0.5rem;
-  }
-
-  .tier-card {
-    border: 1px solid var(--border);
-    padding: 1.2rem;
-    cursor: pointer;
-    transition: border-color 0.2s, background 0.2s, box-shadow 0.2s;
-    position: relative;
-    background: var(--cream);
-  }
-
-  .tier-card:hover { border-color: var(--gold-light); background: white; }
-
-  .tier-card.selected {
-    border-color: var(--gold);
-    background: white;
-    box-shadow: 0 0 0 3px rgba(184,147,58,0.12);
-  }
-
-  .tier-card input[type="radio"] {
-    position: absolute;
-    opacity: 0;
-    pointer-events: none;
-    width: auto;
-  }
-
-  .tier-tag {
-    font-size: 0.58rem;
-    font-weight: 500;
-    letter-spacing: 0.14em;
-    text-transform: uppercase;
-    padding: 0.2rem 0.55rem;
-    margin-bottom: 0.7rem;
-    display: inline-block;
-  }
-
-  .tier-tag.entry    { background: #e8f4e8; color: #2d6a2d; }
-  .tier-tag.standard { background: var(--gold-pale); color: #7a6020; }
-  .tier-tag.mid      { background: #e8eef8; color: #2b4a8a; }
-  .tier-tag.exec     { background: #f0e8f4; color: #5a2d7a; }
-
-  .tier-name {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 1.05rem;
-    font-weight: 500;
-    color: var(--ink);
-    margin-bottom: 0.3rem;
-  }
-
-  .tier-price {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 1.55rem;
-    font-weight: 400;
-    color: var(--gold);
-    line-height: 1;
-    margin-bottom: 0.5rem;
-  }
-
-  .tier-price span {
-    font-size: 0.75rem;
-    font-family: 'DM Sans', sans-serif;
-    font-weight: 300;
-    color: var(--mid);
-    margin-left: 3px;
-  }
-
-  .tier-desc { font-size: 0.76rem; color: var(--mid); line-height: 1.6; }
-
-  .tier-includes {
-    margin-top: 0.6rem;
-    padding-top: 0.6rem;
-    border-top: 1px solid var(--border);
-  }
-
-  .tier-includes li {
-    font-size: 0.72rem;
-    color: var(--mid);
-    line-height: 1.7;
-    list-style: none;
-    padding-left: 1rem;
-    position: relative;
-  }
-
-  .tier-includes li::before {
-    content: '✓';
-    position: absolute;
-    left: 0;
-    color: var(--gold);
-    font-size: 0.65rem;
-  }
-
-  .tier-selected-indicator {
-    position: absolute;
-    top: 0.7rem;
-    right: 0.7rem;
-    width: 16px;
-    height: 16px;
-    border: 2px solid var(--border);
-    border-radius: 50%;
-    transition: all 0.2s;
-    background: white;
-  }
-
-  .tier-card.selected .tier-selected-indicator {
-    border-color: var(--gold);
-    background: var(--gold);
-  }
-
-  /* FEE WAIVER */
-  .waiver-block {
-    margin-top: 1.2rem;
-    border: 1px dashed var(--border);
-    padding: 1.2rem;
-    background: white;
-  }
-
-  .waiver-toggle {
-    display: flex;
-    align-items: center;
-    gap: 0.8rem;
-    cursor: pointer;
-    user-select: none;
-    font-size: 0.82rem;
-    color: var(--mid);
-  }
-
-  .waiver-toggle input { width: auto; accent-color: var(--rust); cursor: pointer; }
-  .waiver-toggle strong { color: var(--rust); }
-
-  .waiver-fields {
-    display: none;
-    margin-top: 1rem;
-    padding-top: 1rem;
-    border-top: 1px solid var(--border);
-  }
-
-  .waiver-fields.open { display: block; }
-
-  .waiver-note {
-    font-size: 0.75rem;
-    color: var(--mid);
-    line-height: 1.7;
-    margin-bottom: 0.8rem;
-    font-style: italic;
-  }
-
-  .fee-summary {
-    margin-top: 1.2rem;
-    padding: 0.9rem 1.1rem;
-    background: var(--gold-pale);
-    border: 1px solid rgba(184,147,58,0.3);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 0.82rem;
-    color: var(--ink);
-  }
-
-  .fee-summary strong {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 1.3rem;
-    color: var(--gold);
-  }
-
-  .fee-summary .waived-label {
-    font-size: 0.68rem;
-    font-weight: 500;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    color: var(--rust);
-    background: #fce8e0;
-    padding: 0.2rem 0.6rem;
-    margin-left: 0.5rem;
-  }
-
   @media (max-width: 580px) {
     .field-row { grid-template-columns: 1fr; }
     .radio-group, .check-group { grid-template-columns: 1fr; }
-    .tier-grid { grid-template-columns: 1fr; }
     header { padding: 1.2rem 1.5rem; }
     .section-card { padding: 1.5rem; }
     .hero h1 { font-size: 2rem; }
@@ -944,9 +616,9 @@
 <header>
   <div class="brand-wordmark">
     <span class="brand-name">Ayoola Clarke-Prescott</span>
-    <span class="brand-title">Business Psychologist &nbsp;|&nbsp; Anonymisation Specialist &nbsp;|&nbsp; Resume Strategist</span>
+    <span class="brand-title">Business Psychologist &nbsp;|&nbsp; Resume Strategist</span>
   </div>
-  <a class="brand-badge" href="https://ayoolaclarke-prescott.github.io/" target="_blank" rel="noopener">Consulting Practice</a>
+  <div class="brand-badge">Consulting Practice</div>
 </header>
 
 <div class="hero">
@@ -962,16 +634,13 @@
     <span class="progress-label" data-step="1">Career Goals</span>
     <span class="progress-label" data-step="2">Background</span>
     <span class="progress-label" data-step="3">Challenges</span>
-    <span class="progress-label" data-step="4">Pricing</span>
-    <span class="progress-label" data-step="5">Upload</span>
-    <span class="progress-label" data-step="6">Confirmation</span>
+    <span class="progress-label" data-step="4">Send Documents</span>
+    <span class="progress-label" data-step="5">Confirmation</span>
   </div>
   <div class="progress-track"><div class="progress-fill" id="progress-fill"></div></div>
 </div>
 
 <div class="form-wrap">
-
-
 
   <!-- SECTION 1: CONTACT -->
   <div class="section-card active" data-section="0">
@@ -1049,7 +718,7 @@
 
     <div class="field-group">
       <label>Are you targeting a specific industry or sector? <span class="req">*</span></label>
-      <input type="text" id="target-industry" placeholder="e.g. Financial Services, Healthcare, Energy, Public Sector">
+      <input type="text" id="target-industry" placeholder="e.g. Judiciary, Financial Services, Healthcare, Public Sector">
     </div>
 
     <div class="field-group">
@@ -1060,24 +729,12 @@
     <div class="field-group">
       <label>What is your employment intention? <span class="req">*</span></label>
       <div class="radio-group" id="employment-intent">
-        <label class="radio-option">
-          <input type="radio" name="emp-intent" value="full-time"> Full-time employment
-        </label>
-        <label class="radio-option">
-          <input type="radio" name="emp-intent" value="part-time"> Part-time employment
-        </label>
-        <label class="radio-option">
-          <input type="radio" name="emp-intent" value="contract"> Contract / Freelance
-        </label>
-        <label class="radio-option">
-          <input type="radio" name="emp-intent" value="promotion"> Internal promotion
-        </label>
-        <label class="radio-option">
-          <input type="radio" name="emp-intent" value="transition"> Career transition
-        </label>
-        <label class="radio-option">
-          <input type="radio" name="emp-intent" value="return"> Returning to workforce
-        </label>
+        <label class="radio-option"><input type="radio" name="emp-intent" value="full-time"> Full-time employment</label>
+        <label class="radio-option"><input type="radio" name="emp-intent" value="part-time"> Part-time employment</label>
+        <label class="radio-option"><input type="radio" name="emp-intent" value="contract"> Contract / Freelance</label>
+        <label class="radio-option"><input type="radio" name="emp-intent" value="promotion"> Internal promotion</label>
+        <label class="radio-option"><input type="radio" name="emp-intent" value="transition"> Career transition</label>
+        <label class="radio-option"><input type="radio" name="emp-intent" value="return"> Returning to workforce</label>
       </div>
     </div>
 
@@ -1134,7 +791,7 @@
 
     <div class="field-group">
       <label>List your top 3 professional accomplishments <span class="req">*</span> <span class="hint">Use measurable outcomes where possible.</span></label>
-      <textarea id="accomplishments" rows="5" placeholder="1. Led a policy reform initiative that reduced processing time by 40%.&#10;2. Designed and implemented an information governance framework adopted organisation-wide.&#10;3. ..."></textarea>
+      <textarea id="accomplishments" rows="5" placeholder="1. Led a policy reform initiative that reduced processing time by 40%.&#10;2. Established the first anonymisation framework for the Judiciary of Trinidad and Tobago.&#10;3. ..."></textarea>
     </div>
 
     <div class="field-group">
@@ -1229,147 +886,40 @@
     </div>
   </div>
 
-  <!-- SECTION 5: SERVICE TIER SELECTION -->
+  <!-- SECTION 5: SEND DOCUMENTS -->
   <div class="section-card" data-section="4">
     <div class="section-header">
       <span class="section-num">05</span>
       <div class="section-meta">
-        <h2>Select Your Service Tier</h2>
-        <p>Choose the package that best reflects your career stage and what you need from this engagement.</p>
+        <h2>Send Your Documents</h2>
+        <p>Please email your current resume, and the job description if you have one, directly to Ayoola so they can be reviewed alongside your intake responses.</p>
       </div>
     </div>
 
     <div class="field-group">
-      <label>Service Package <span class="req">*</span></label>
-      <div class="tier-grid" id="tier-grid">
-
-        <div class="tier-card" onclick="selectTier(this, 'entry', 'Foundation Resume', 350)">
-          <input type="radio" name="tier" value="entry">
-          <div class="tier-selected-indicator"></div>
-          <span class="tier-tag entry">Entry Level</span>
-          <div class="tier-name">Foundation Resume</div>
-          <div class="tier-price">TT$350 <span>TTD</span></div>
-          <div class="tier-desc">For new graduates, school leavers, and those entering the workforce for the first time.</div>
-          <ul class="tier-includes">
-            <li>Resume build or rewrite</li>
-            <li>ATS-friendly formatting</li>
-            <li>Skills and education focus</li>
-            <li>72-hour delivery</li>
-          </ul>
+      <label>Step 1. Send Your Current Resume <span class="req">*</span> <span class="hint">PDF or Word document</span></label>
+      <div class="email-instruction-box">
+        <div class="email-instruction-icon">&#9993;</div>
+        <div class="email-instruction-text">
+          <p>Email your current resume to:</p>
+          <p class="email-instruction-address">ayo.stratminds@gmail.com</p>
+          <p class="email-instruction-note">Please use your full name as the subject line, so your resume can be matched to this submission. For example: <em>"Resume, Jane Sampson"</em>.</p>
         </div>
-
-        <div class="tier-card" onclick="selectTier(this, 'essential', 'Essential Optimisation', 600)">
-          <input type="radio" name="tier" value="essential">
-          <div class="tier-selected-indicator"></div>
-          <span class="tier-tag standard">Standard</span>
-          <div class="tier-name">Essential Optimisation</div>
-          <div class="tier-price">TT$600 <span>TTD</span></div>
-          <div class="tier-desc">For mid-level professionals seeking a targeted, results-driven resume rewrite.</div>
-          <ul class="tier-includes">
-            <li>Full resume rewrite and optimisation</li>
-            <li>ATS keyword strategy</li>
-            <li>Results-focused language</li>
-            <li>72-hour delivery</li>
-          </ul>
-        </div>
-
-        <div class="tier-card" onclick="selectTier(this, 'strategic', 'Strategic Reposition', 1200)">
-          <input type="radio" name="tier" value="strategic">
-          <div class="tier-selected-indicator"></div>
-          <span class="tier-tag mid">Mid-Senior</span>
-          <div class="tier-name">Strategic Reposition</div>
-          <div class="tier-price">TT$1,200 <span>TTD</span></div>
-          <div class="tier-desc">For professionals with 5+ years of experience or those making a sector transition.</div>
-          <ul class="tier-includes">
-            <li>Full resume rewrite</li>
-            <li>Tailored cover letter</li>
-            <li>LinkedIn profile summary</li>
-            <li>15-minute debrief call</li>
-            <li>48-hour delivery</li>
-          </ul>
-        </div>
-
-        <div class="tier-card" onclick="selectTier(this, 'executive', 'Executive Package', 2000)">
-          <input type="radio" name="tier" value="executive">
-          <div class="tier-selected-indicator"></div>
-          <span class="tier-tag exec">Executive</span>
-          <div class="tier-name">Executive Package</div>
-          <div class="tier-price">TT$2,000 <span>TTD</span></div>
-          <div class="tier-desc">For senior professionals, managers, and those targeting high-value or leadership roles.</div>
-          <ul class="tier-includes">
-            <li>Everything in Strategic Reposition</li>
-            <li>Personal branding statement</li>
-            <li>Career narrative document</li>
-            <li>Priority 24-hour delivery</li>
-          </ul>
-        </div>
-
-      </div>
-
-      <!-- FEE WAIVER -->
-      <div class="waiver-block">
-        <label class="waiver-toggle">
-          <input type="checkbox" id="waiver-check" onchange="toggleWaiver()">
-          <span>Apply a <strong>fee waiver</strong> to this submission</span>
-        </label>
-        <div class="waiver-fields" id="waiver-fields">
-          <p class="waiver-note">This option is visible only to you as the practitioner. Record the reason for waiving the fee below for your own reference. The client will not see this field or its contents.</p>
-          <div class="field-group" style="margin-bottom:0.8rem;">
-            <label>Reason for Waiver <span class="req">*</span></label>
-            <select id="waiver-reason">
-              <option value="">Select reason...</option>
-              <option>Pro bono, financial hardship</option>
-              <option>Community or youth development case</option>
-              <option>Referral reciprocity</option>
-              <option>Professional courtesy</option>
-              <option>Promotional or trial submission</option>
-              <option>Other (see notes)</option>
-            </select>
-          </div>
-          <div class="field-group" style="margin-bottom:0;">
-            <label>Internal Notes <span class="hint">(optional)</span></label>
-            <textarea id="waiver-notes" rows="2" placeholder="Any additional context for your records..."></textarea>
-          </div>
-        </div>
-      </div>
-
-      <!-- FEE SUMMARY -->
-      <div class="fee-summary" id="fee-summary" style="display:none;">
-        <span id="fee-summary-label">Selected tier</span>
-        <div>
-          <strong id="fee-summary-price"></strong>
-          <span class="waived-label" id="waived-label" style="display:none;">Fee Waived</span>
-        </div>
-      </div>
-
-    </div>
-
-    <div class="nav-row">
-      <button class="btn btn-secondary" onclick="prevSection()">&larr; Back</button>
-      <button class="btn btn-primary" onclick="nextSection()">Next Section &rarr;</button>
-    </div>
-  </div>
-
-  <!-- SECTION 6: RESUME UPLOAD -->
-  <div class="section-card" data-section="5">
-    <div class="section-header">
-      <span class="section-num">06</span>
-      <div class="section-meta">
-        <h2>Resume Upload</h2>
-        <p>Upload your current resume. If you do not have one, proceed without uploading and we will build from the responses you have provided.</p>
       </div>
     </div>
 
     <div class="field-group">
-      <label>Upload Your Current Resume <span class="hint">.pdf, .doc, .docx accepted. Max 5MB.</span></label>
-      <div class="upload-zone" id="upload-zone">
-        <input type="file" id="resume-file" accept=".pdf,.doc,.docx" onchange="handleFileSelect(this)">
-        <div class="upload-icon">&#9965;</div>
-        <p><strong>Click to browse</strong> or drag and drop your file here</p>
-        <p style="margin-top:0.4rem; font-size:0.75rem;">PDF, DOC, or DOCX &nbsp;|&nbsp; Maximum 5 MB</p>
-        <div class="file-name" id="file-name-display"></div>
+      <label>Step 2. Send the Job Description <span class="hint">(optional, but highly recommended)</span></label>
+      <div class="email-instruction-box">
+        <div class="email-instruction-icon">&#128196;</div>
+        <div class="email-instruction-text">
+          <p>If you are applying for a specific role, attach or paste the job description into the <strong>same email</strong> as your resume, or send it as a separate follow-up email to the same address above.</p>
+          <p class="email-instruction-note">This allows your resume to be tailored precisely to the language, requirements, and priorities of that specific role and employer. If you do not have a job description yet, simply skip this step. Your resume will still be optimised using your career objective and target role from Section 02.</p>
+        </div>
       </div>
     </div>
+
+    <p class="doc-checklist-note">Once you have sent your documents by email, please continue and complete the remainder of this form below. Your submission will not be processed until both the form and your emailed documents have been received.</p>
 
     <div class="field-group" style="margin-top:1.5rem;">
       <label>Preferred Turnaround <span class="req">*</span></label>
@@ -1403,7 +953,6 @@
           <button class="sig-tab" onclick="switchSigTab('type', this)">Type Signature</button>
         </div>
 
-        <!-- DRAW PAD -->
         <div class="sig-panel active" id="sig-draw-panel">
           <canvas id="sig-canvas" width="700" height="130"></canvas>
           <div class="sig-canvas-actions">
@@ -1412,7 +961,6 @@
           </div>
         </div>
 
-        <!-- TYPED -->
         <div class="sig-panel" id="sig-type-panel">
           <div class="sig-typed">
             <input type="text" id="sig-typed-name" placeholder="Type your full name" oninput="updateTypedPreview()">
@@ -1456,22 +1004,22 @@
       <p style="font-family:'Cormorant Garamond',serif; font-size:1.1rem; font-style:italic; color:var(--ink);">Your completed intake will be reviewed personally by Ayoola Clarke-Prescott. You will receive your optimised resume within the requested timeframe.</p>
       <p style="margin-top:0.8rem; font-size:0.8rem; color:var(--mid);">For enquiries: <strong style="color:var(--gold);">ayo.stratminds@gmail.com</strong></p>
     </div>
+    <div class="result-card" style="border-left-color: var(--gold); text-align:center; padding: 1.6rem;">
+      <p style="font-size:0.85rem; color:var(--mid); line-height:1.8;">Have you sent your resume yet? If not, please email it now to <strong style="color:var(--rust);">ayo.stratminds@gmail.com</strong> using your full name as the subject line, along with the job description if you have one.</p>
+    </div>
   </div>
 
 </div>
 
 <footer>
   <p><strong>Ayoola Clarke-Prescott</strong> &nbsp;|&nbsp; MSc Business Psychology &nbsp;|&nbsp; BSc Library &amp; Information Science with Legal Studies</p>
-  <p style="margin-top:0.5rem;">Anonymisation Specialist &amp; Business Psychologist &nbsp;|&nbsp; Independent Consulting Practice</p>
+  <p style="margin-top:0.5rem;">Anonymisation &amp; Redacting Specialist, Judiciary of Trinidad and Tobago &nbsp;|&nbsp; Independent Consulting Practice</p>
   <p style="margin-top:0.5rem;">All information submitted is treated in strict confidence and used solely for the purpose of resume optimisation.</p>
 </footer>
 
 <script>
-// ─────────────────────────────────────────────
-// SECTION NAVIGATION
-// ─────────────────────────────────────────────
 let currentSection = 0;
-const totalSections = 6;
+const totalSections = 5;
 
 function updateProgress() {
   const pct = (currentSection / (totalSections - 1)) * 100;
@@ -1503,9 +1051,6 @@ function prevSection() {
   if (currentSection > 0) showSection(currentSection - 1);
 }
 
-// ─────────────────────────────────────────────
-// RADIO / CHECKBOX VISUAL FEEDBACK
-// ─────────────────────────────────────────────
 document.addEventListener('change', function(e) {
   if (e.target.type === 'radio') {
     const group = e.target.closest('.radio-group');
@@ -1520,30 +1065,6 @@ document.addEventListener('change', function(e) {
   }
 });
 
-// ─────────────────────────────────────────────
-// FILE UPLOAD
-// ─────────────────────────────────────────────
-const zone = document.getElementById('upload-zone');
-zone.addEventListener('dragover', e => { e.preventDefault(); zone.classList.add('dragover'); });
-zone.addEventListener('dragleave', () => zone.classList.remove('dragover'));
-zone.addEventListener('drop', e => {
-  e.preventDefault();
-  zone.classList.remove('dragover');
-  const file = e.dataTransfer.files[0];
-  if (file) showFileName(file.name);
-});
-
-function handleFileSelect(input) {
-  if (input.files[0]) showFileName(input.files[0].name);
-}
-
-function showFileName(name) {
-  document.getElementById('file-name-display').textContent = 'Selected: ' + name;
-}
-
-// ─────────────────────────────────────────────
-// SIGNATURE BLOCK
-// ─────────────────────────────────────────────
 let sigMode = 'draw';
 let isDrawing = false;
 let sigHasContent = false;
@@ -1551,7 +1072,6 @@ let sigHasContent = false;
 const canvas = document.getElementById('sig-canvas');
 const ctx = canvas.getContext('2d');
 
-// Scale canvas for retina
 (function scaleCanvas() {
   const rect = canvas.getBoundingClientRect();
   const dpr = window.devicePixelRatio || 1;
@@ -1601,7 +1121,6 @@ function hasValidSignature() {
   return document.getElementById('sig-typed-name').value.trim().length > 1;
 }
 
-// Set timestamp on signature block
 (function setTimestamp() {
   const now = new Date();
   const opts = { year: 'numeric', month: 'long', day: 'numeric', hour: '2-digit', minute: '2-digit' };
@@ -1610,47 +1129,6 @@ function hasValidSignature() {
   if (el) el.textContent = 'Signed: ' + ts;
 })();
 
-// ─────────────────────────────────────────────
-// PRICING TIER SELECTION + FEE WAIVER
-// ─────────────────────────────────────────────
-let selectedTier = { key: '', name: '', price: 0, waived: false };
-
-function selectTier(card, key, name, price) {
-  document.querySelectorAll('.tier-card').forEach(c => c.classList.remove('selected'));
-  card.classList.add('selected');
-  card.querySelector('input[type="radio"]').checked = true;
-  selectedTier.key   = key;
-  selectedTier.name  = name;
-  selectedTier.price = price;
-  updateFeeSummary();
-}
-
-function toggleWaiver() {
-  const open = document.getElementById('waiver-check').checked;
-  document.getElementById('waiver-fields').classList.toggle('open', open);
-  selectedTier.waived = open;
-  updateFeeSummary();
-}
-
-function updateFeeSummary() {
-  const summary = document.getElementById('fee-summary');
-  if (!selectedTier.key) { summary.style.display = 'none'; return; }
-  summary.style.display = 'flex';
-  document.getElementById('fee-summary-label').textContent = selectedTier.name;
-  const priceEl  = document.getElementById('fee-summary-price');
-  const waivedEl = document.getElementById('waived-label');
-  if (selectedTier.waived) {
-    priceEl.textContent    = 'TT$0';
-    waivedEl.style.display = 'inline';
-  } else {
-    priceEl.textContent    = 'TT$' + selectedTier.price.toLocaleString();
-    waivedEl.style.display = 'none';
-  }
-}
-
-// ─────────────────────────────────────────────
-// COLLECT FORM DATA
-// ─────────────────────────────────────────────
 function collectFormData() {
   const checks = id => Array.from(document.querySelectorAll('#' + id + ' input:checked')).map(i => i.value);
   const radio  = name => { const el = document.querySelector('input[name="' + name + '"]:checked'); return el ? el.value : 'Not specified'; };
@@ -1678,15 +1156,10 @@ function collectFormData() {
     extraContext:       document.getElementById('extra-context').value.trim()     || 'None',
     turnaround:         radio('turn'),
     referral:           document.getElementById('referral').value                 || 'Not specified',
-    tier:               selectedTier.name                                          || 'Not selected',
-    feeWaived:          selectedTier.waived ? 'Yes, ' + (document.getElementById('waiver-reason').value || 'reason not specified') : 'No',
     submittedAt:        new Date().toLocaleString('en-TT', { timeZone: 'America/Port_of_Spain' })
   };
 }
 
-// ─────────────────────────────────────────────
-// SEND INTAKE TO EMAIL (Formspree)
-// ─────────────────────────────────────────────
 async function sendIntakeEmail(data) {
   try {
     await fetch('https://formspree.io/f/mpqnojpb', {
@@ -1696,7 +1169,7 @@ async function sendIntakeEmail(data) {
         'Accept': 'application/json'
       },
       body: JSON.stringify({
-        _subject: `Resume Intake: ${data.name} - ${data.tier}`,
+        _subject: `Resume Intake: ${data.name} (${data.targetRole})`,
         'Full Name': data.name,
         'Email': data.email,
         'Phone': data.phone,
@@ -1719,9 +1192,8 @@ async function sendIntakeEmail(data) {
         'Additional Context': data.extraContext,
         'Turnaround Requested': data.turnaround,
         'Referral Source': data.referral,
-        'Service Tier': data.tier,
-        'Fee Waived': data.feeWaived,
-        'Submitted At': data.submittedAt
+        'Submitted At': data.submittedAt,
+        'Resume Reminder': 'Client was instructed to email resume (and JD if available) separately to ayo.stratminds@gmail.com'
       })
     });
   } catch (err) {
@@ -1729,13 +1201,9 @@ async function sendIntakeEmail(data) {
   }
 }
 
-// ─────────────────────────────────────────────
-// SUBMIT
-// ─────────────────────────────────────────────
 async function submitForm() {
   const data = collectFormData();
 
-  // Validation
   if (data.name === 'Not provided') {
     alert('Please provide your full name before submitting.'); showSection(0); return;
   }
@@ -1745,9 +1213,6 @@ async function submitForm() {
   if (data.targetRole === 'Not specified') {
     alert('Please specify your target role before submitting.'); showSection(1); return;
   }
-  if (!selectedTier.key) {
-    alert('Please select a service tier before submitting.'); showSection(4); return;
-  }
   if (!hasValidSignature()) {
     alert('Please provide your digital signature before submitting.'); return;
   }
@@ -1755,7 +1220,6 @@ async function submitForm() {
     alert('Please confirm your consent by ticking the declaration before submitting.'); return;
   }
 
-  // Hide sections, show loader
   document.querySelectorAll('.section-card').forEach(c => c.style.display = 'none');
   document.getElementById('loading-wrap').style.display = 'block';
   window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -1779,9 +1243,6 @@ function renderConfirmation(data) {
   window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
-// ─────────────────────────────────────────────
-// INIT
-// ─────────────────────────────────────────────
 updateProgress();
 </script>
 </body>
